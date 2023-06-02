@@ -1,0 +1,97 @@
+<html>
+  <body>
+    <div class="container-fluid main-parent d-flex flex-column justify-content-center align-items-center">
+      <div id="print"
+        class="print container-fluid d-flex flex-column justify-content-start"
+      >
+        <div class="parent1 d-flex justify-content-between">
+          <div class="child1">
+            <p class="address">
+              <strong>TestFM Org</strong><br />
+              123 Main St<br />
+              San Francisco California 12345<br />
+              U.S.A
+            </p>
+          </div>
+          <div class="child2 text-end">
+            <p>
+              <span class="package">PACKAGE</span> <br />
+              Package# PKG-00004
+            </p>
+          </div>
+        </div>
+        <div
+          class="parent2 d-flex justify-content-between my-5 align-items-center"
+        >
+          <div class="child">
+            <p>
+              <strong>Package#</strong><br />
+              PKG-00004
+            </p>
+          </div>
+          <div class="child">
+            <p>
+              <strong>Order Date</strong><br />
+              02 May 2023
+            </p>
+          </div>
+          <div class="child">
+            <p>
+              <strong>Package Date</strong><br />
+              02 May 2023
+            </p>
+          </div>
+          <div class="child">
+            <p>
+              <strong>Sales Order#</strong><br />
+              SO-00004
+            </p>
+          </div>
+          <div class="child total text-center">
+            <p>
+              <strong>Total Qty</strong><br />
+              10.00
+            </p>
+          </div>
+        </div>
+        <div class="parent3 my-3">
+          <p>
+            Bill To<br />
+            <strong>John Smith</strong>
+          </p>
+        </div>
+        <div class="parent4 my-3">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th style="text-align: left">Item & Description</th>
+                <th style="text-align: right">Qty</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>First Item</td>
+                <td>10.00 <br/><span>pcs</span></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>First Item</td>
+                <td>10.00 <br/><span>pcs</span></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>First Item</td>
+                <td>10.00 <br/><span>pcs</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+<div class="buttonParent d-flex justify-content-end">
+  <button class="btn btn-dark mx-2 my-4" (click)="printToPDF()">Print</button>
+</div>
+    </div>
+  </body>
+</html>
